@@ -9,8 +9,23 @@ The stop argument also kills the `zsaservice` which DOESN'T stop when you logout
 ## Requirements
 
 - Pop_OS 22.04
-- Password-less `sudo`
 - An already configured Zscaler client
+- `sudo` access from configured zscaler profile account
+
+## Install for global usage
+
+```bash
+sudo wget -P /bin/ https://raw.githubusercontent.com/thiskane/pop_os_zscaler_nonsense/refs/heads/main/zscaler
+sudo chmod +x /bin/zscaler
+```
+
+## Usage
+
+```bash
+zscaler {start|stop}
+```
+
+> First time usage ensure zscaler is not already running
 
 ## Notes
 
